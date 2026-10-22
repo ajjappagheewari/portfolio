@@ -1,0 +1,63 @@
+rules_version = '2';
+
+// ===============================================================
+// Assumed Data Model
+// ===============================================================
+//
+// Collection: contacts
+// Document ID: auto-generated document ID (e.g. from addDoc)
+// Fields:
+//   - name: string (required, 2-100 characters) - Sender's full name
+//   - email: string (required, valid email address) - Sender's contact email
+//   - subject: string (optional, 0-200 characters) - Message subject line
+//   - message: string (required, 10-500 characters) - Inquiry message body
+//   - userAgent: string (optional, 0-500 characters) - Browser client info
+//   - submittedAt: string (optional, 0-100 characters) - ISO submission timestamp
+//   - createdAt: timestamp (required) - Firestore server timestamp
+//
+// ===============================================================
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Helper functions
+    function isValidEmail(email) {
+      return email is string &&
+        email.matches("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$");
+    }
+
+    function hasRequiredFields(fields) {
+      return request.resource.data.keys().hasAll(fields);
+    }
+
+    function hasOnlyAllowedFields(fields) {
+      return request.resource.data.keys().hasOnly(fields);
+    }
+
+    function isValidContact(data) {
+      return hasRequiredFields(['name', 'email', 'message', 'createdAt']) &&
+             hasOnlyAllowedFields(['name', 'email', 'subject', 'message', 'userAgent', 'submittedAt', 'createdAt']) &&
+             data.name is string && data.name.size() >= 2 && data.name.size() <= 100 &&
+             isValidEmail(data.email) &&
+             data.message is string && data.message.size() >= 10 && data.message.size() <= 500 &&
+             (!('subject' in data) || (data.subject is string && data.subject.size() <= 200)) &&
+             (!('userAgent' in data) || (data.userAgent is string && data.userAgent.size() <= 500)) &&
+             (!('submittedAt' in data) || (data.submittedAt is string && data.submittedAt.size() <= 100)) &&
+             data.createdAt is timestamp;
+    }
+
+    // Default deny for all collections
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Contacts collection rules
+    match /contacts/{contactId} {
+      // Allow any public visitor to submit a contact inquiry that satisfies strict validation
+      allow create: if isValidContact(request.resource.data);
+
+      // Deny public read, update, or deletion to protect visitor messages and PII
+      allow read, update, delete: if false;
+    }
+  }
+}

@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="p4Bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#140E0A"/>
+      <stop offset="100%" stop-color="#090706"/>
+    </linearGradient>
+    <linearGradient id="p4Gold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F5C542"/>
+      <stop offset="100%" stop-color="#B8860B"/>
+    </linearGradient>
+    <linearGradient id="activeBar" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="50%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#8B5E3C"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#p4Bg)"/>
+
+  <!-- Visualizer Window -->
+  <g transform="translate(60, 45)">
+    <rect width="680" height="410" rx="16" fill="#16100B" stroke="rgba(212,175,55,0.25)" stroke-width="1.5"/>
+    
+    <!-- Top Control Bar -->
+    <rect width="680" height="54" rx="16" fill="#1F160F"/>
+    <rect y="44" width="680" height="10" fill="#1F160F"/>
+    <text x="25" y="34" font-family="'Playfair Display', serif" font-size="16" font-weight="700" fill="url(#p4Gold)">ALGO VIZ</text>
+    
+    <!-- Algorithm selector buttons -->
+    <rect x="140" y="14" width="85" height="26" rx="6" fill="#D4AF37"/>
+    <text x="182" y="31" font-family="'Inter', sans-serif" font-size="10" font-weight="700" fill="#0A0A0A" text-anchor="middle">QuickSort</text>
+
+    <rect x="235" y="14" width="85" height="26" rx="6" fill="#2E2015" stroke="rgba(212,175,55,0.2)" stroke-width="1"/>
+    <text x="277" y="31" font-family="'Inter', sans-serif" font-size="10" fill="#B8AE9C" text-anchor="middle">MergeSort</text>
+
+    <rect x="330" y="14" width="85" height="26" rx="6" fill="#2E2015" stroke="rgba(212,175,55,0.2)" stroke-width="1"/>
+    <text x="372" y="31" font-family="'Inter', sans-serif" font-size="10" fill="#B8AE9C" text-anchor="middle">Dijkstra</text>
+
+    <!-- Speed / Reset -->
+    <rect x="530" y="14" width="60" height="26" rx="6" fill="#2E2015" stroke="rgba(212,175,55,0.3)" stroke-width="1"/>
+    <text x="560" y="31" font-family="'Inter', sans-serif" font-size="10" fill="#F5F0E6" text-anchor="middle">Reset</text>
+
+    <rect x="600" y="14" width="60" height="26" rx="6" fill="#8B5E3C"/>
+    <text x="630" y="31" font-family="'Inter', sans-serif" font-size="10" font-weight="600" fill="#F5F0E6" text-anchor="middle">Run ▶</text>
+
+    <!-- Code / Stats Overlay -->
+    <g transform="translate(35, 75)">
+      <text x="0" y="20" font-family="'Inter', sans-serif" font-size="12" fill="#B8AE9C">Comparisons: <tspan fill="#F5C542" font-weight="700">1,420</tspan></text>
+      <text x="170" y="20" font-family="'Inter', sans-serif" font-size="12" fill="#B8AE9C">Array Size: <tspan fill="#F5C542" font-weight="700">32 Elements</tspan></text>
+      <text x="330" y="20" font-family="'Inter', sans-serif" font-size="12" fill="#B8AE9C">Complexity: <tspan fill="#F5C542" font-weight="700">O(n log n)</tspan></text>
+    </g>
+
+    <!-- Sorting Bars Visualization -->
+    <g transform="translate(35, 360)">
+      <!-- Base line -->
+      <line x1="0" y1="0" x2="610" y2="0" stroke="rgba(212,175,55,0.3)" stroke-width="1"/>
+      
+      <!-- Bars of various heights -->
+      <rect x="10" y="-70" width="14" height="70" rx="3" fill="url(#p4Gold)"/>
+      <rect x="30" y="-120" width="14" height="120" rx="3" fill="url(#p4Gold)"/>
+      <rect x="50" y="-45" width="14" height="45" rx="3" fill="url(#p4Gold)"/>
+      <rect x="70" y="-180" width="14" height="180" rx="3" fill="url(#p4Gold)"/>
+      <rect x="90" y="-95" width="14" height="95" rx="3" fill="url(#p4Gold)"/>
+      <rect x="110" y="-150" width="14" height="150" rx="3" fill="url(#p4Gold)"/>
+      <rect x="130" y="-60" width="14" height="60" rx="3" fill="url(#p4Gold)"/>
+      <rect x="150" y="-210" width="14" height="210" rx="3" fill="url(#p4Gold)"/>
+      <rect x="170" y="-135" width="14" height="135" rx="3" fill="url(#p4Gold)"/>
+      <rect x="190" y="-80" width="14" height="80" rx="3" fill="url(#p4Gold)"/>
+      
+      <!-- Comparing Pivot bars (active highlight) -->
+      <rect x="210" y="-195" width="14" height="195" rx="3" fill="url(#activeBar)"/>
+      <rect x="230" y="-195" width="14" height="195" rx="3" fill="#FFFFFF"/>
+      <text x="227" y="-210" font-family="'Inter', sans-serif" font-size="10" fill="#F5C542" text-anchor="middle">pivot</text>
+
+      <rect x="250" y="-110" width="14" height="110" rx="3" fill="url(#p4Gold)"/>
+      <rect x="270" y="-170" width="14" height="170" rx="3" fill="url(#p4Gold)"/>
+      <rect x="290" y="-50" width="14" height="50" rx="3" fill="url(#p4Gold)"/>
+      <rect x="310" y="-230" width="14" height="230" rx="3" fill="url(#p4Gold)"/>
+      <rect x="330" y="-140" width="14" height="140" rx="3" fill="url(#p4Gold)"/>
+      <rect x="350" y="-85" width="14" height="85" rx="3" fill="url(#p4Gold)"/>
+      <rect x="370" y="-160" width="14" height="160" rx="3" fill="url(#p4Gold)"/>
+      <rect x="390" y="-100" width="14" height="100" rx="3" fill="url(#p4Gold)"/>
+      <rect x="410" y="-175" width="14" height="175" rx="3" fill="url(#p4Gold)"/>
+      <rect x="430" y="-65" width="14" height="65" rx="3" fill="url(#p4Gold)"/>
+      <rect x="450" y="-190" width="14" height="190" rx="3" fill="url(#p4Gold)"/>
+      <rect x="470" y="-125" width="14" height="125" rx="3" fill="url(#p4Gold)"/>
+      <rect x="490" y="-80" width="14" height="80" rx="3" fill="url(#p4Gold)"/>
+      <rect x="510" y="-215" width="14" height="215" rx="3" fill="url(#p4Gold)"/>
+      <rect x="530" y="-155" width="14" height="155" rx="3" fill="url(#p4Gold)"/>
+      <rect x="550" y="-70" width="14" height="70" rx="3" fill="url(#p4Gold)"/>
+      <rect x="570" y="-145" width="14" height="145" rx="3" fill="url(#p4Gold)"/>
+      <rect x="590" y="-115" width="14" height="115" rx="3" fill="url(#p4Gold)"/>
+    </g>
+  </g>
+</svg>

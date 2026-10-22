@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="p2Bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#120D08"/>
+      <stop offset="100%" stop-color="#080605"/>
+    </linearGradient>
+    <linearGradient id="p2Gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4AF37"/>
+      <stop offset="50%" stop-color="#F5C542"/>
+      <stop offset="100%" stop-color="#B8860B"/>
+    </linearGradient>
+    <radialGradient id="p2Radial" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#D4AF37" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#p2Bg)"/>
+  <circle cx="400" cy="250" r="320" fill="url(#p2Radial)"/>
+
+  <!-- Luxury editorial layout frame -->
+  <g transform="translate(60, 40)">
+    <rect width="680" height="420" rx="16" fill="#17110C" stroke="rgba(212,175,55,0.25)" stroke-width="1.5"/>
+    
+    <!-- Top Nav mock -->
+    <text x="40" y="45" font-family="'Playfair Display', serif" font-size="20" font-weight="700" fill="url(#p2Gold)">AG</text>
+    <line x1="380" y1="40" x2="420" y2="40" stroke="#B8AE9C" stroke-width="2" stroke-linecap="round"/>
+    <line x1="440" y1="40" x2="480" y2="40" stroke="#B8AE9C" stroke-width="2" stroke-linecap="round"/>
+    <line x1="500" y1="40" x2="540" y2="40" stroke="#B8AE9C" stroke-width="2" stroke-linecap="round"/>
+    <rect x="570" y="26" width="75" height="28" rx="6" fill="none" stroke="url(#p2Gold)" stroke-width="1.5"/>
+    <text x="607" y="44" font-family="'Inter', sans-serif" font-size="10" fill="#D4AF37" text-anchor="middle">CONTACT</text>
+
+    <!-- Hero Content Mock -->
+    <text x="40" y="125" font-family="'Inter', sans-serif" font-size="12" fill="#D4AF37" letter-spacing="4">LUXURY EDITORIAL PORTFOLIO</text>
+    <text x="40" y="175" font-family="'Playfair Display', serif" font-size="34" font-weight="700" fill="#F5F0E6">Architecting</text>
+    <text x="40" y="215" font-family="'Playfair Display', serif" font-size="34" font-weight="700" fill="url(#p2Gold)">Digital Elegance</text>
+    
+    <text x="40" y="260" font-family="'Inter', sans-serif" font-size="12" fill="#B8AE9C">High-performance responsive personal showcase designed with</text>
+    <text x="40" y="280" font-family="'Inter', sans-serif" font-size="12" fill="#B8AE9C">vanilla JavaScript, fluid CSS, glassmorphism and golden micro-glows.</text>
+
+    <!-- Buttons -->
+    <rect x="40" y="320" width="130" height="38" rx="8" fill="url(#p2Gold)"/>
+    <text x="105" y="344" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#0A0A0A" text-anchor="middle">EXPLORE WORK</text>
+
+    <rect x="185" y="320" width="130" height="38" rx="8" fill="none" stroke="rgba(212,175,55,0.4)" stroke-width="1.5"/>
+    <text x="250" y="344" font-family="'Inter', sans-serif" font-size="11" font-weight="500" fill="#F5F0E6" text-anchor="middle">VIEW RESUME</text>
+
+    <!-- Right Floating Glass Card -->
+    <g transform="translate(430, 95)">
+      <rect width="210" height="280" rx="14" fill="#1C140E" stroke="url(#p2Gold)" stroke-width="1" fill-opacity="0.85"/>
+      <circle cx="105" cy="90" r="50" fill="#2A1C12" stroke="rgba(212,175,55,0.3)" stroke-width="1.5"/>
+      <text x="105" y="98" font-family="'Playfair Display', serif" font-size="28" font-weight="700" fill="url(#p2Gold)" text-anchor="middle">AG</text>
+      <rect x="35" y="165" width="140" height="12" rx="4" fill="#3D2B1C"/>
+      <rect x="50" y="190" width="110" height="8" rx="3" fill="#D4AF37" fill-opacity="0.4"/>
+      <rect x="40" y="225" width="130" height="26" rx="6" fill="url(#p2Gold)" fill-opacity="0.15" stroke="rgba(212,175,55,0.4)"/>
+      <text x="105" y="242" font-family="'Inter', sans-serif" font-size="10" fill="#D4AF37" text-anchor="middle">BCA 2026</text>
+    </g>
+  </g>
+</svg>

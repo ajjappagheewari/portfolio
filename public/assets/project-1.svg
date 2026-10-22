@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="p1Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A120B"/>
+      <stop offset="100%" stop-color="#0E0A08"/>
+    </linearGradient>
+    <linearGradient id="p1Gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#F5C542"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#p1Grad)"/>
+  
+  <!-- Grid overlay -->
+  <pattern id="p1Grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(212,175,55,0.06)" stroke-width="1"/>
+  </pattern>
+  <rect width="800" height="500" fill="url(#p1Grid)"/>
+
+  <!-- Dashboard Frame -->
+  <g transform="translate(60, 45)">
+    <!-- Browser Top Bar -->
+    <rect width="680" height="410" rx="16" fill="#140E0A" stroke="rgba(212,175,55,0.25)" stroke-width="1.5"/>
+    <rect width="680" height="46" rx="16" fill="#1C140E"/>
+    <rect y="36" width="680" height="10" fill="#1C140E"/>
+    <!-- Window dots -->
+    <circle cx="28" cy="23" r="5" fill="#E55353" fill-opacity="0.8"/>
+    <circle cx="46" cy="23" r="5" fill="#E5A93C" fill-opacity="0.8"/>
+    <circle cx="64" cy="23" r="5" fill="#52C41A" fill-opacity="0.8"/>
+    <rect x="120" y="14" width="440" height="18" rx="9" fill="#0A0A0A" stroke="rgba(212,175,55,0.2)" stroke-width="1"/>
+    <text x="340" y="27" font-family="'Inter', sans-serif" font-size="10" fill="#B8AE9C" text-anchor="middle">campus-portal.internal/academic-suite</text>
+
+    <!-- Sidebar -->
+    <rect x="15" y="60" width="140" height="335" rx="10" fill="#0E0A07" stroke="rgba(212,175,55,0.12)" stroke-width="1"/>
+    <rect x="30" y="80" width="110" height="14" rx="4" fill="url(#p1Gold)" fill-opacity="0.9"/>
+    <rect x="30" y="110" width="85" height="10" rx="3" fill="#3D2D1E"/>
+    <rect x="30" y="135" width="95" height="10" rx="3" fill="#3D2D1E"/>
+    <rect x="30" y="160" width="75" height="10" rx="3" fill="#3D2D1E"/>
+    <rect x="30" y="185" width="90" height="10" rx="3" fill="#3D2D1E"/>
+
+    <!-- Content area -->
+    <!-- Metric Cards -->
+    <rect x="175" y="60" width="150" height="85" rx="10" fill="#1A120B" stroke="rgba(212,175,55,0.2)" stroke-width="1"/>
+    <text x="195" y="88" font-family="'Inter', sans-serif" font-size="11" fill="#B8AE9C">Enrolled Students</text>
+    <text x="195" y="122" font-family="'Playfair Display', serif" font-size="24" font-weight="700" fill="#F5F0E6">1,480</text>
+    <circle cx="295" cy="102" r="16" fill="rgba(212,175,55,0.15)"/>
+    <text x="295" y="106" font-family="'Inter', sans-serif" font-size="12" fill="#D4AF37" text-anchor="middle">✓</text>
+
+    <rect x="345" y="60" width="150" height="85" rx="10" fill="#1A120B" stroke="rgba(212,175,55,0.2)" stroke-width="1"/>
+    <text x="365" y="88" font-family="'Inter', sans-serif" font-size="11" fill="#B8AE9C">Pass Rate</text>
+    <text x="365" y="122" font-family="'Playfair Display', serif" font-size="24" font-weight="700" fill="url(#p1Gold)">98.4%</text>
+
+    <rect x="515" y="60" width="150" height="85" rx="10" fill="#1A120B" stroke="rgba(212,175,55,0.2)" stroke-width="1"/>
+    <text x="535" y="88" font-family="'Inter', sans-serif" font-size="11" fill="#B8AE9C">Semester</text>
+    <text x="535" y="122" font-family="'Playfair Display', serif" font-size="22" font-weight="700" fill="#F5F0E6">Fall 2026</text>
+
+    <!-- Chart & Table Area -->
+    <rect x="175" y="165" width="490" height="230" rx="10" fill="#100C09" stroke="rgba(212,175,55,0.15)" stroke-width="1"/>
+    <text x="200" y="195" font-family="'Playfair Display', serif" font-size="15" font-weight="600" fill="#F5F0E6">Grade Distribution &amp; Attendance Metrics</text>
+    
+    <!-- Gold Line Graph -->
+    <polyline points="200,340 260,310 320,325 380,260 440,275 500,225 560,240 630,205" fill="none" stroke="url(#p1Gold)" stroke-width="3"/>
+    <polygon points="200,340 260,310 320,325 380,260 440,275 500,225 560,240 630,205 630,360 200,360" fill="url(#p1Gold)" fill-opacity="0.12"/>
+    
+    <!-- Data points -->
+    <circle cx="260" cy="310" r="4" fill="#D4AF37"/>
+    <circle cx="380" cy="260" r="4" fill="#D4AF37"/>
+    <circle cx="500" cy="225" r="4" fill="#D4AF37"/>
+    <circle cx="630" cy="205" r="5" fill="#F5C542"/>
+  </g>
+</svg>

@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ajjappa Gheewari | BCA Student &amp; Aspiring Web Developer</title>
+  <meta name="description" content="Personal portfolio of Ajjappa Gheewari — Bachelor of Computer Applications (BCA) student, aspiring web developer, and problem solver passionate about elegant software.">
+  <meta name="keywords" content="Ajjappa Gheewari, BCA Student, Web Developer, Portfolio, Software Engineering, Java, C, JavaScript, Python, MySQL">
+  <meta name="author" content="Ajjappa Gheewari">
+  <meta name="theme-color" content="#0A0A0A">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ajjappa Gheewari | BCA Student &amp; Aspiring Web Developer">
+  <meta property="og:description" content="Luxury editorial portfolio showcasing projects, technical expertise, and academic milestones in Computer Applications.">
+  <meta property="og:image" content="assets/profile-placeholder.svg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <!-- Google Fonts: Playfair Display (Serif) & Inter (Sans-serif) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <!-- Preloader -->
+  <div id="preloader" class="preloader" aria-label="Loading site">
+    <div class="preloader-content">
+      <div class="preloader-monogram">AG</div>
+      <div class="preloader-bar-wrap">
+        <div class="preloader-bar"></div>
+      </div>
+      <p class="preloader-text">CRAFTING EXPERIENCE</p>
+    </div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="header">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Ajjappa Gheewari - Back to Home">
+        <span class="logo-emblem">AG</span>
+        <span class="logo-name">Ajjappa Gheewari</span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header CTA & Mobile Toggle -->
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-outline nav-cta">Let's Talk</a>
+        <button class="hamburger-btn" id="mobileMenuToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+          <span class="bar bar-1"></span>
+          <span class="bar bar-2"></span>
+          <span class="bar bar-3"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="mobile-drawer-inner">
+      <div class="mobile-drawer-header">
+        <div class="brand-logo">
+          <span class="logo-emblem">AG</span>
+          <span class="logo-name">Ajjappa Gheewari</span>
+        </div>
+        <button class="drawer-close-btn" id="mobileDrawerClose" aria-label="Close menu">&times;</button>
+      </div>
+      <nav class="mobile-nav" aria-label="Mobile Navigation">
+        <ul class="mobile-nav-list">
+          <li><a href="#hero" class="mobile-nav-link"><span>01</span> Home</a></li>
+          <li><a href="#about" class="mobile-nav-link"><span>02</span> About</a></li>
+          <li><a href="#skills" class="mobile-nav-link"><span>03</span> Skills</a></li>
+          <li><a href="#projects" class="mobile-nav-link"><span>04</span> Projects</a></li>
+          <li><a href="#education" class="mobile-nav-link"><span>05</span> Education</a></li>
+          <li><a href="#contact" class="mobile-nav-link"><span>06</span> Contact</a></li>
+        </ul>
+      </nav>
+      <div class="mobile-drawer-footer">
+        <a href="assets/resume.pdf" download="Ajjappa_Gheewari_Resume.pdf" class="btn btn-primary w-full">
+          <span>Download Resume</span>
+          <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="mobile-overlay" id="mobileOverlay" aria-hidden="true"></div>
+
+  <main id="main-content">
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section">
+      <!-- Interactive floating gold particles canvas -->
+      <canvas id="particles-canvas" class="hero-canvas" aria-hidden="true"></canvas>
+
+      <div class="section-container hero-container">
+        <div class="hero-content">
+          <!-- Availability Badge -->
+          <div class="availability-badge reveal-fade">
+            <span class="pulse-dot"></span>
+            <span class="badge-text">Available for Internships &amp; Tech Opportunities</span>
+          </div>
+
+          <!-- Hero Headings -->
+          <p class="hero-eyebrow reveal-fade">WELCOME TO MY PORTFOLIO</p>
+          <h1 class="hero-title reveal-fade">
+            Hi, I'm <br>
+            <span class="gold-gradient-text glow-text">Ajjappa Gheewari</span>
+          </h1>
+
+          <!-- Typing Subtitle -->
+          <div class="hero-typing-wrap reveal-fade">
+            <span class="typing-prefix">I am a </span>
+            <span class="typing-role" id="typingRole">BCA Student</span>
+            <span class="typing-cursor" aria-hidden="true">|</span>
+          </div>
+
+          <!-- Intro Paragraph -->
+          <p class="hero-desc reveal-fade">
+            A Bachelor of Computer Applications scholar passionate about modern web engineering, clean software architecture, and solving real-world challenges through elegant, performant code.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="hero-actions reveal-fade">
+            <a href="#projects" class="btn btn-primary btn-glow">
+              <span>View Projects</span>
+              <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+            <a href="assets/resume.pdf" download="Ajjappa_Gheewari_Resume.pdf" class="btn btn-outline" id="heroResumeBtn">
+              <span>Download Resume</span>
+              <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            </a>
+          </div>
+
+          <!-- Social Quick Strip -->
+          <div class="hero-social-strip reveal-fade">
+            <span class="social-strip-label">CONNECT:</span>
+            <div class="social-links">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-chip" aria-label="GitHub Profile">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>GitHub</span>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-chip" aria-label="LinkedIn Profile">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                <span>LinkedIn</span>
+              </a>
+              <a href="mailto:ajjappa.gheewari@example.com" class="social-chip" aria-label="Direct Email">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                <span>Email</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Profile Card -->
+        <div class="hero-visual reveal-fade">
+          <div class="profile-card-wrapper">
+            <div class="profile-glow-ring"></div>
+            <div class="profile-card">
+              <div class="profile-image-container">
+                <img src="assets/profile-placeholder.svg" alt="Ajjappa Gheewari - BCA Student &amp; Web Developer" class="profile-img" width="400" height="480" loading="eager">
+              </div>
+              <div class="profile-card-overlay">
+                <div class="profile-badge">
+                  <span class="badge-icon">🎓</span>
+                  <div class="badge-texts">
+                    <span class="badge-title">BCA Scholar</span>
+                    <span class="badge-sub">Computer Applications</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Micro Metric Badges -->
+            <div class="floating-pill pill-top">
+              <span class="pill-dot"></span>
+              <span>Clean Code &amp; Architecture</span>
+            </div>
+            <div class="floating-pill pill-bottom">
+              <span class="pill-icon">⚡</span>
+              <span>Modern Web Solutions</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Down Indicator -->
+      <a href="#about" class="scroll-indicator" aria-label="Scroll to About section">
+        <span class="scroll-text">EXPLORE</span>
+        <div class="scroll-mouse">
+          <div class="scroll-wheel"></div>
+        </div>
+      </a>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about-section section-padding">
+      <div class="section-container">
+        <!-- Section Header -->
+        <div class="section-header text-center reveal-fade">
+          <span class="section-tag">01 / DISCOVER</span>
+          <h2 class="section-title">About <span class="gold-gradient-text">Me</span></h2>
+          <p class="section-subtitle">Bridging academic computer science foundations with modern digital artistry.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Story / Bio Card -->
+          <div class="about-bio-card card-luxury reveal-slide-left">
+            <div class="card-corner-gold tl"></div>
+            <div class="card-corner-gold tr"></div>
+            <div class="card-corner-gold bl"></div>
+            <div class="card-corner-gold br"></div>
+
+            <h3 class="about-story-title">Crafting Purposeful Code with Passion</h3>
+            <p class="about-text">
+              Hello! I'm <strong class="text-gold">Ajjappa Gheewari</strong>, currently pursuing my <strong>Bachelor of Computer Applications (BCA)</strong>. From the first time I compiled a simple C program to architecting interactive, responsive web applications, I have been captivated by the art of turning algorithmic logic into seamless user experiences.
+            </p>
+            <p class="about-text">
+              My academic journey has grounded me in core computing disciplines — object-oriented paradigms in Java, structured programming in C, efficient relational schemas in MySQL, and contemporary web standards with HTML, CSS, and vanilla JavaScript.
+            </p>
+            <p class="about-text">
+              I believe great software is where <em>elegance meets performance</em>. Whether collaborating on team projects or independently building full-stack applications, I approach every challenge with meticulous curiosity and continuous growth.
+            </p>
+
+            <!-- Quick Attributes Grid -->
+            <div class="about-attributes">
+              <div class="attribute-item">
+                <span class="attr-icon">🎯</span>
+                <div>
+                  <span class="attr-label">Focus Area</span>
+                  <span class="attr-value">Web Development &amp; Software</span>
+                </div>
+              </div>
+              <div class="attribute-item">
+                <span class="attr-icon">📍</span>
+                <div>
+                  <span class="attr-label">Based In</span>
+                  <span class="attr-value">Karnataka, India</span>
+                </div>
+              </div>
+              <div class="attribute-item">
+                <span class="attr-icon">📚</span>
+                <div>
+                  <span class="attr-label">Degree</span>
+                  <span class="attr-value">Bachelor of Computer Applications</span>
+                </div>
+              </div>
+              <div class="attribute-item">
+                <span class="attr-icon">🚀</span>
+                <div>
+                  <span class="attr-label">Status</span>
+                  <span class="attr-value">Seeking Internship Opportunities</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Counter Stats Column -->
+          <div class="about-stats-column reveal-slide-right">
+            <!-- Counter Card 1 -->
+            <div class="stat-card card-luxury">
+              <div class="stat-glow"></div>
+              <div class="stat-number-wrap">
+                <span class="stat-counter" data-target="14">0</span>
+                <span class="stat-plus">+</span>
+              </div>
+              <h4 class="stat-title">Projects Completed</h4>
+              <p class="stat-desc">Hands-on applications ranging from academic databases to interactive frontends.</p>
+            </div>
+
+            <!-- Counter Card 2 -->
+            <div class="stat-card card-luxury">
+              <div class="stat-glow"></div>
+              <div class="stat-number-wrap">
+                <span class="stat-counter" data-target="10">0</span>
+                <span class="stat-plus">+</span>
+              </div>
+              <h4 class="stat-title">Technologies Mastered</h4>
+              <p class="stat-desc">Core languages, modern frontend tooling, databases, and version control.</p>
+            </div>
+
+            <!-- Counter Card 3 -->
+            <div class="stat-card card-luxury">
+              <div class="stat-glow"></div>
+              <div class="stat-number-wrap">
+                <span class="stat-counter" data-target="6">0</span>
+                <span class="stat-plus">+</span>
+              </div>
+              <h4 class="stat-title">Certifications Earned</h4>
+              <p class="stat-desc">Verified credentials across programming, web design, and database systems.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="skills-section section-padding">
+      <div class="section-container">
+        <!-- Section Header -->
+        <div class="section-header text-center reveal-fade">
+          <span class="section-tag">02 / EXPERTISE</span>
+          <h2 class="section-title">Technical <span class="gold-gradient-text">Arsenal</span></h2>
+          <p class="section-subtitle">Proficiencies developed through academic rigor and hands-on software development.</p>
+        </div>
+
+        <div class="skills-categories-grid">
+
+          <!-- Category 1: Programming Languages -->
+          <div class="skill-category-card card-luxury reveal-fade">
+            <div class="category-header">
+              <div class="cat-icon-badge">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </div>
+              <div>
+                <h3 class="category-title">Core Programming</h3>
+                <span class="category-subtitle">Algorithmic &amp; OOP Foundations</span>
+              </div>
+            </div>
+
+            <div class="skills-list">
+              <!-- Skill: C Language -->
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <div class="skill-name-wrap">
+                    <span class="skill-badge">C</span>
+                    <span class="skill-name">C Programming</span>
+                  </div>
+                  <span class="skill-percent">88%</span>
+                </div>
+                <div class="progress-track" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" aria-label="C Programming proficiency">
+                  <div class="progress-bar" data-width="88%"></div>
+                </div>
+                <span class="skill-detail">Pointers, memory management, data structures</span>
+              </div>
+
+              <!-- Skill: Java -->
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <div class="skill-name-wrap">
+                    <span class="skill-badge">☕</span>
+                    <span class="skill-name">Java (Core &amp; OOP)</span>
+                  </div>
+                  <span class="skill-percent">82%</span>
+                </div>
+                <div class="progress-track" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100" aria-label="Java proficiency">
+                  <div class="progress-bar" data-width="82%"></div>
+                </div>
+                <span class="skill-detail">Polymorphism, inheritance, collections, JDBC</span>
+              </div>
+
+              <!-- Skill: Python -->
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <div class="skill-name-wrap">
+                    <span class="skill-badge">🐍</span>
+                    <span class="skill-name">Python</span>
+                  </div>
+                  <span class="skill-percent">76%</span>
+                </div>
+                <div class="progress-track" role="progressbar" aria-valuenow="76" aria-valuemin="0" aria-valuemax="100" aria-label="Python proficiency">
+                  <div class="progress-bar" data-width="76%"></div>
+                </div>
+                <span class="skill-detail">Scripting, file handling, automation, basic data analysis</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Web Development -->
+          <div class="skill-category-card card-luxury reveal-fade">
+            <div class="category-header">
+              <div class="cat-icon-badge">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              </div>
+              <div>
+                <h3 class="category-title">Web Development</h3>
+                <span class="category-subtitle">Modern Responsive Interfaces</span>
+              </div>
+            </div>
+
+            <div class="skills-list">
+              <!-- Skill: HTML5 -->
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <div class="skill-name-wrap">
+                    <span class="skill-badge">5</span>
+                    <span class="skill-name">HTML5 (Semantic)</span>
+                  </div>
+                  <span class="skill-percent">95%</span>
+                </div>
+                <div class="progress-track" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" aria-label="HTML5 proficiency">
+                  <div class="progress-bar" data-width="95%"></div>
+                </div>
+                <span class="skill-detail">Accessibility (a11y), clean DOM structure, SEO best practices</span>
+              </div>
+
+              <!-- Skill: CSS3 -->
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <div class="skill-name-wrap">
+                    <span class="skill-badge">🎨</span>
+                    <span class="skill-name">CSS3 &amp; Modern Layouts</span>
+                  </div>
+                  <span class="skill-percent">90%</span>
+                </div>
+                <div class="progress-track" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="CSS3 proficiency">
+                  <div class="progress-bar" data-width="90%"></div>
+                </div>
+                <span class="skill-detail">Flexbox, Grid, CSS variables, glassmorphism, keyframes</span>
+              </div>
+
+              <!-- Skill: JavaScript -->
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <div class="skill-name-wrap">
+                    <span class="skill-badge">JS</span>
+                    <span class="skill-name">JavaScript (ES6+)</span>
+                  </div>
+                  <span class="skill-percent">84%</span>
+                </div>
+                <div class="progress-track" role="progressbar" aria-valuenow="84" aria-valuemin="0" aria-valuemax="100" aria-label="JavaScript proficiency">
+                  <div class="progress-bar" data-width="84%"></div>
+                </div>
+                <span class="skill-detail">DOM manipulation, fetch API, asynchronous JS, event loop</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Database & Systems -->
+          <div class="skill-category-card card-luxury reveal-fade">
+            <div class="category-header">
+              <div class="cat-icon-badge">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+              </div>
+              <div>
+                <h3 class="category-title">Database &amp; Data</h3>
+                <span class="category-subtitle">Relational Storage &amp; Schemas</span>
+              </div>
+            </div>
+
+            <div class="skills-list">
+              <!-- Skill: MySQL -->
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <div class="skill-name-wrap">
+                    <span class="skill-badge">🐬</span>
+                    <span class="skill-name">MySQL</span>
+                  </div>
+                  <span class="skill-percent">85%</span>
+                </div>
+                <div class="progress-track" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="MySQL proficiency">
+                  <div class="progress-bar" data-width="85%"></div>
+                </div>
+                <span class="skill-detail">Complex queries, joins, foreign keys, stored routines</span>
+              </div>
+
+              <!-- Skill: Database Design -->
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <div class="skill-name-wrap">
+                    <span class="skill-badge">📊</span>
+                    <span class="skill-name">Schema Design &amp; Normalization</span>
+                  </div>
+                  <span class="skill-percent">82%</span>
+                </div>
+                <div class="progress-track" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100" aria-label="Database Design proficiency">
+                  <div class="progress-bar" data-width="82%"></div>
+                </div>
+                <span class="skill-detail">1NF to 3NF, ER diagrams, data integrity constraints</span>
+              </div>
+
+              <!-- Skill: SQL Optimization -->
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <div class="skill-name-wrap">
+                    <span class="skill-badge">⚡</span>
+                    <span class="skill-name">Data Query Optimization</span>
+                  </div>
+                  <span class="skill-percent">78%</span>
+                </div>
+                <div class="progress-track" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" aria-label="Query Optimization proficiency">
+                  <div class="progress-bar" data-width="78%"></div>
+                </div>
+                <span class="skill-detail">Indexing strategies, execution plans, transaction management</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 4: Tools & Workflow -->
+          <div class="skill-category-card card-luxury reveal-fade">
+            <div class="category-header">
+              <div class="cat-icon-badge">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+              </div>
+              <div>
+                <h3 class="category-title">Tools &amp; Workflow</h3>
+                <span class="category-subtitle">Engineering Productivity</span>
+              </div>
+            </div>
+
+            <div class="skills-list">
+              <!-- Skill: Git & GitHub -->
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <div class="skill-name-wrap">
+                    <span class="skill-badge">🐙</span>
+                    <span class="skill-name">Git &amp; GitHub</span>
+                  </div>
+                  <span class="skill-percent">88%</span>
+                </div>
+                <div class="progress-track" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" aria-label="Git and GitHub proficiency">
+                  <div class="progress-bar" data-width="88%"></div>
+                </div>
+                <span class="skill-detail">Branching, merge workflows, pull requests, version control</span>
+              </div>
+
+              <!-- Skill: VS Code -->
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <div class="skill-name-wrap">
+                    <span class="skill-badge">💻</span>
+                    <span class="skill-name">VS Code &amp; Extensions</span>
+                  </div>
+                  <span class="skill-percent">92%</span>
+                </div>
+                <div class="progress-track" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100" aria-label="VS Code proficiency">
+                  <div class="progress-bar" data-width="92%"></div>
+                </div>
+                <span class="skill-detail">Debugger integration, snippets, terminal automation, linters</span>
+              </div>
+
+              <!-- Skill: Problem Solving -->
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <div class="skill-name-wrap">
+                    <span class="skill-badge">🧠</span>
+                    <span class="skill-name">Problem Solving &amp; Logic</span>
+                  </div>
+                  <span class="skill-percent">86%</span>
+                </div>
+                <div class="progress-track" role="progressbar" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100" aria-label="Problem Solving proficiency">
+                  <div class="progress-bar" data-width="86%"></div>
+                </div>
+                <span class="skill-detail">Data structures, recursive thinking, debugging methodologies</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="projects-section section-padding">
+      <div class="section-container">
+        <!-- Section Header -->
+        <div class="section-header text-center reveal-fade">
+          <span class="section-tag">03 / SHOWCASE</span>
+          <h2 class="section-title">Featured <span class="gold-gradient-text">Projects</span></h2>
+          <p class="section-subtitle">A curated collection of web applications, academic systems, and practical tools.</p>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Project Card 1: Student Management System -->
+          <article class="project-card card-luxury reveal-fade" data-project-id="1">
+            <div class="project-thumb-wrap">
+              <img src="assets/project-1.svg" alt="CampusCore Academic and Student Management Portal preview" class="project-img" width="800" height="500" loading="lazy">
+              <div class="project-overlay-glow"></div>
+              <span class="project-badge">Full-Stack Capstone</span>
+            </div>
+            <div class="project-body">
+              <div class="project-header">
+                <h3 class="project-title">CampusCore — Academic &amp; Student Portal</h3>
+                <p class="project-desc">
+                  A comprehensive academic management system engineered for BCA coursework. Handles student enrollments, course registrations, semester grade calculation, and attendance reporting with robust MySQL schema architecture and role-based security.
+                </p>
+              </div>
+
+              <div class="project-tags">
+                <span class="tag">Java</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">JavaScript</span>
+              </div>
+
+              <div class="project-footer">
+                <a href="#contact" class="project-btn project-btn-primary" aria-label="View Live Demo of CampusCore">
+                  <span>Live Demo</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-btn project-btn-outline" aria-label="View CampusCore on GitHub">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project Card 2: Luxury Portfolio Experience -->
+          <article class="project-card card-luxury reveal-fade" data-project-id="2">
+            <div class="project-thumb-wrap">
+              <img src="assets/project-2.svg" alt="Aura Luxury Portfolio preview" class="project-img" width="800" height="500" loading="lazy">
+              <div class="project-overlay-glow"></div>
+              <span class="project-badge">Creative UI / UX</span>
+            </div>
+            <div class="project-body">
+              <div class="project-header">
+                <h3 class="project-title">Aura — Luxury Editorial Portfolio</h3>
+                <p class="project-desc">
+                  An editorial-grade portfolio built using pure HTML5, CSS3, and vanilla JavaScript. Features glassmorphism navigation, dynamic canvas gold particles, smooth scroll reveals, custom typography, and zero third-party framework overhead.
+                </p>
+              </div>
+
+              <div class="project-tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS Variables</span>
+                <span class="tag">Vanilla JS</span>
+                <span class="tag">Canvas API</span>
+                <span class="tag">IntersectionObserver</span>
+              </div>
+
+              <div class="project-footer">
+                <a href="#hero" class="project-btn project-btn-primary" aria-label="View Live Demo of Aura Portfolio">
+                  <span>Live Preview</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-btn project-btn-outline" aria-label="View Portfolio source on GitHub">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project Card 3: E-Commerce Storefront -->
+          <article class="project-card card-luxury reveal-fade" data-project-id="3">
+            <div class="project-thumb-wrap">
+              <img src="assets/project-3.svg" alt="Aura Cart e-commerce preview" class="project-img" width="800" height="500" loading="lazy">
+              <div class="project-overlay-glow"></div>
+              <span class="project-badge">Web Application</span>
+            </div>
+            <div class="project-body">
+              <div class="project-header">
+                <h3 class="project-title">Aura Cart — Responsive Storefront</h3>
+                <p class="project-desc">
+                  An intuitive mini e-commerce web application featuring live product filtering, dynamic cart calculation, responsive checkout drawer, and local storage state persistence. Built completely dependency-free with modern JavaScript.
+                </p>
+              </div>
+
+              <div class="project-tags">
+                <span class="tag">JavaScript (ES6+)</span>
+                <span class="tag">CSS Grid</span>
+                <span class="tag">LocalStorage</span>
+                <span class="tag">Responsive UI</span>
+              </div>
+
+              <div class="project-footer">
+                <a href="#contact" class="project-btn project-btn-primary" aria-label="View Live Demo of Aura Cart">
+                  <span>Live Demo</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-btn project-btn-outline" aria-label="View Aura Cart on GitHub">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project Card 4: Algorithm & DSA Visualizer -->
+          <article class="project-card card-luxury reveal-fade" data-project-id="4">
+            <div class="project-thumb-wrap">
+              <img src="assets/project-4.svg" alt="Algorithm and DSA visualizer preview" class="project-img" width="800" height="500" loading="lazy">
+              <div class="project-overlay-glow"></div>
+              <span class="project-badge">Algorithm Tool</span>
+            </div>
+            <div class="project-body">
+              <div class="project-header">
+                <h3 class="project-title">AlgoLens — Sorting &amp; DSA Visualizer</h3>
+                <p class="project-desc">
+                  An interactive educational web platform demonstrating classic sorting algorithms (QuickSort, MergeSort, BubbleSort) and pathfinding routines. Includes step controls, speed adjustments, and real-time comparison analytics.
+                </p>
+              </div>
+
+              <div class="project-tags">
+                <span class="tag">Algorithms</span>
+                <span class="tag">Data Structures</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">HTML5 Canvas</span>
+                <span class="tag">C Logic</span>
+              </div>
+
+              <div class="project-footer">
+                <a href="#contact" class="project-btn project-btn-primary" aria-label="View Live Demo of AlgoLens">
+                  <span>Live Demo</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-btn project-btn-outline" aria-label="View AlgoLens on GitHub">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION & CERTIFICATIONS SECTION -->
+    <section id="education" class="education-section section-padding">
+      <div class="section-container">
+        <!-- Section Header -->
+        <div class="section-header text-center reveal-fade">
+          <span class="section-tag">04 / MILESTONES</span>
+          <h2 class="section-title">Education &amp; <span class="gold-gradient-text">Certifications</span></h2>
+          <p class="section-subtitle">A chronological record of academic accomplishments and ongoing skill refinement.</p>
+        </div>
+
+        <div class="timeline-container">
+          <div class="timeline-spine"></div>
+
+          <!-- Timeline Item 1: BCA -->
+          <div class="timeline-item reveal-slide-left">
+            <div class="timeline-dot">
+              <span class="dot-inner"></span>
+            </div>
+            <div class="timeline-card card-luxury">
+              <div class="timeline-meta">
+                <span class="timeline-badge current">Current Degree</span>
+                <span class="timeline-year">2024 — Present</span>
+              </div>
+              <h3 class="timeline-heading">Bachelor of Computer Applications (BCA)</h3>
+              <h4 class="timeline-institution">Karnatak University / Affiliated Institution</h4>
+              <p class="timeline-desc">
+                Engaged in deep coursework across computer architecture, database management systems (DBMS), data structures &amp; algorithms in C/Java, software engineering principles, and full-stack web development. Consistently demonstrating academic dedication and practical project execution.
+              </p>
+              <div class="timeline-highlights">
+                <span class="pill-tag">Data Structures &amp; Algorithms</span>
+                <span class="pill-tag">Relational Database Systems</span>
+                <span class="pill-tag">OOP with Java</span>
+                <span class="pill-tag">Web Technologies</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2: 12th Grade -->
+          <div class="timeline-item reveal-slide-right">
+            <div class="timeline-dot">
+              <span class="dot-inner"></span>
+            </div>
+            <div class="timeline-card card-luxury">
+              <div class="timeline-meta">
+                <span class="timeline-badge">Higher Secondary</span>
+                <span class="timeline-year">2022 — 2024</span>
+              </div>
+              <h3 class="timeline-heading">Pre-University Education (12th Grade)</h3>
+              <h4 class="timeline-institution">State Pre-University Board</h4>
+              <p class="timeline-desc">
+                Specialized in Science / Computer Science stream with core focus on Mathematics, Physics, and fundamental programming concepts. Developed analytical problem-solving skills that paved the way for higher computer science studies.
+              </p>
+              <div class="timeline-highlights">
+                <span class="pill-tag">Mathematics &amp; Logic</span>
+                <span class="pill-tag">Computer Science Fundamentals</span>
+                <span class="pill-tag">Physics</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3: 10th Grade -->
+          <div class="timeline-item reveal-slide-left">
+            <div class="timeline-dot">
+              <span class="dot-inner"></span>
+            </div>
+            <div class="timeline-card card-luxury">
+              <div class="timeline-meta">
+                <span class="timeline-badge">Secondary School</span>
+                <span class="timeline-year">2022</span>
+              </div>
+              <h3 class="timeline-heading">Secondary School Leaving Certificate (SSLC / 10th)</h3>
+              <h4 class="timeline-institution">State Secondary Education Board</h4>
+              <p class="timeline-desc">
+                Completed secondary schooling with distinction honors. Participated in inter-school science exhibitions and mathematics quizzes, nurturing a keen curiosity for modern computing technology.
+              </p>
+              <div class="timeline-highlights">
+                <span class="pill-tag">Academic Distinction</span>
+                <span class="pill-tag">Science &amp; Mathematics</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 4: Certifications & Masteries -->
+          <div class="timeline-item reveal-slide-right">
+            <div class="timeline-dot">
+              <span class="dot-inner"></span>
+            </div>
+            <div class="timeline-card card-luxury cert-timeline-card">
+              <div class="timeline-meta">
+                <span class="timeline-badge gold">Certifications &amp; Credentials</span>
+                <span class="timeline-year">Verified Milestones</span>
+              </div>
+              <h3 class="timeline-heading">Professional &amp; Technical Certifications</h3>
+              <p class="timeline-desc">
+                Supplemented academic education with targeted industry certifications in core programming and modern web technologies.
+              </p>
+
+              <div class="certifications-list">
+                <!-- Cert 1 -->
+                <div class="cert-item">
+                  <div class="cert-icon-wrap">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+                  </div>
+                  <div class="cert-info">
+                    <span class="cert-name">Modern Full-Stack Web Development Mastery</span>
+                    <span class="cert-issuer">Online Learning Platform • HTML, CSS, JavaScript ES6+</span>
+                  </div>
+                </div>
+
+                <!-- Cert 2 -->
+                <div class="cert-item">
+                  <div class="cert-icon-wrap">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+                  </div>
+                  <div class="cert-info">
+                    <span class="cert-name">Object-Oriented Programming with Java</span>
+                    <span class="cert-issuer">Technical Certification Institute • Core Java &amp; JDBC</span>
+                  </div>
+                </div>
+
+                <!-- Cert 3 -->
+                <div class="cert-item">
+                  <div class="cert-icon-wrap">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+                  </div>
+                  <div class="cert-info">
+                    <span class="cert-name">Relational Databases &amp; SQL Query Design</span>
+                    <span class="cert-issuer">Database Specialist Academy • MySQL &amp; Normalization</span>
+                  </div>
+                </div>
+
+                <!-- Cert 4 -->
+                <div class="cert-item">
+                  <div class="cert-icon-wrap">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+                  </div>
+                  <div class="cert-info">
+                    <span class="cert-name">Git &amp; GitHub Version Control for Developers</span>
+                    <span class="cert-issuer">Open Source Education • Collaborative Workflows</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact-section section-padding">
+      <div class="section-container">
+        <!-- Section Header -->
+        <div class="section-header text-center reveal-fade">
+          <span class="section-tag">05 / GET IN TOUCH</span>
+          <h2 class="section-title">Let's Build Something <span class="gold-gradient-text">Exceptional</span></h2>
+          <p class="section-subtitle">Interested in collaborating, hiring for an internship, or discussing a project? Reach out below.</p>
+        </div>
+
+        <div class="contact-split-grid">
+          <!-- Left: Contact Details Card -->
+          <div class="contact-info-card card-luxury reveal-slide-left">
+            <h3 class="contact-card-title">Contact Information</h3>
+            <p class="contact-card-text">
+              I am always receptive to new ideas, technical challenges, internships, and conversations with fellow developers or recruiters.
+            </p>
+
+            <div class="contact-items-list">
+              <!-- Item 1: Email -->
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div class="contact-detail">
+                  <span class="detail-label">Email Me</span>
+                  <a href="mailto:ajjappa.gheewari@example.com" class="detail-value text-gold-hover">ajjappa.gheewari@example.com</a>
+                </div>
+              </div>
+
+              <!-- Item 2: Location -->
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div class="contact-detail">
+                  <span class="detail-label">Location</span>
+                  <span class="detail-value">Karnataka, India</span>
+                </div>
+              </div>
+
+              <!-- Item 3: Status -->
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 14 14"/></svg>
+                </div>
+                <div class="contact-detail">
+                  <span class="detail-label">Current Availability</span>
+                  <span class="detail-value">Open for Summer &amp; Fall Internships</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Links Panel -->
+            <div class="contact-socials-box">
+              <span class="socials-box-title">SOCIAL PRESENCE</span>
+              <div class="social-icons-row">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-circle-btn" aria-label="Ajjappa Gheewari on GitHub">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-circle-btn" aria-label="Ajjappa Gheewari on LinkedIn">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                </a>
+                <a href="mailto:ajjappa.gheewari@example.com" class="social-circle-btn" aria-label="Send Direct Email">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Validated Contact Form -->
+          <div class="contact-form-card card-luxury reveal-slide-right">
+            <h3 class="contact-card-title">Send a Message</h3>
+            
+            <form id="contactForm" class="contact-form" novalidate>
+              <!-- Name Input Group -->
+              <div class="form-group">
+                <label for="contactName" class="form-label">Your Name <span class="required-star">*</span></label>
+                <div class="input-wrapper">
+                  <input type="text" id="contactName" name="name" class="form-input" placeholder="e.g. Rahul Sharma" required minlength="2" autocomplete="name">
+                </div>
+                <span class="form-error" id="nameError" aria-live="polite"></span>
+              </div>
+
+              <!-- Email Input Group -->
+              <div class="form-group">
+                <label for="contactEmail" class="form-label">Your Email Address <span class="required-star">*</span></label>
+                <div class="input-wrapper">
+                  <input type="email" id="contactEmail" name="email" class="form-input" placeholder="e.g. rahul@example.com" required autocomplete="email">
+                </div>
+                <span class="form-error" id="emailError" aria-live="polite"></span>
+              </div>
+
+              <!-- Subject Input Group -->
+              <div class="form-group">
+                <label for="contactSubject" class="form-label">Subject</label>
+                <div class="input-wrapper">
+                  <input type="text" id="contactSubject" name="subject" class="form-input" placeholder="e.g. Internship Inquiry / Project Discussion">
+                </div>
+              </div>
+
+              <!-- Message Input Group -->
+              <div class="form-group">
+                <div class="message-label-row">
+                  <label for="contactMessage" class="form-label">Your Message <span class="required-star">*</span></label>
+                  <span class="char-count" id="charCount">0 / 500</span>
+                </div>
+                <div class="input-wrapper">
+                  <textarea id="contactMessage" name="message" class="form-textarea" rows="5" placeholder="Share your inquiry or say hello..." required minlength="10" maxlength="500"></textarea>
+                </div>
+                <span class="form-error" id="messageError" aria-live="polite"></span>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" id="submitBtn" class="btn btn-primary btn-glow w-full">
+                <span class="btn-text">Transmit Message</span>
+                <span class="btn-loader" aria-hidden="true"></span>
+                <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              </button>
+
+              <!-- Form Status Notice -->
+              <div id="formStatus" class="form-status" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Toast Notification Pop-up -->
+  <div id="toastNotification" class="toast-notification" role="alert" aria-live="assertive">
+    <div class="toast-icon">✓</div>
+    <div class="toast-content">
+      <span class="toast-title">Message Delivered</span>
+      <span class="toast-body">Thank you! Your message has been received. I will respond promptly.</span>
+    </div>
+  </div>
+
+  <!-- SITE FOOTER -->
+  <footer class="site-footer">
+    <div class="section-container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#hero" class="brand-logo">
+            <span class="logo-emblem">AG</span>
+            <span class="logo-name">Ajjappa Gheewari</span>
+          </a>
+          <p class="footer-tagline">
+            Bachelor of Computer Applications student architecting modern, accessible, and elegant software solutions.
+          </p>
+        </div>
+
+        <div class="footer-nav-col">
+          <span class="footer-col-title">NAVIGATION</span>
+          <ul class="footer-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Technical Skills</a></li>
+            <li><a href="#projects">Selected Projects</a></li>
+            <li><a href="#education">Education &amp; Milestones</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <span class="footer-col-title">GET CONNECTED</span>
+          <div class="footer-social-links">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-circle-btn small" aria-label="GitHub">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-circle-btn small" aria-label="LinkedIn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+            <a href="mailto:ajjappa.gheewari@example.com" class="social-circle-btn small" aria-label="Email">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; 2026 <strong>Ajjappa Gheewari</strong>. All rights reserved. Built with modern HTML, CSS &amp; vanilla JavaScript.
+        </p>
+        <button id="backToTopBtn" class="back-to-top" aria-label="Back to top of page">
+          <svg class="progress-ring" width="44" height="44" viewBox="0 0 44 44">
+            <circle class="progress-ring-circle" stroke="url(#goldGradient)" stroke-width="2.5" fill="transparent" r="18" cx="22" cy="22"/>
+            <defs>
+              <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#D4AF37"/>
+                <stop offset="50%" stop-color="#F5C542"/>
+                <stop offset="100%" stop-color="#B8860B"/>
+              </linearGradient>
+            </defs>
+          </svg>
+          <svg class="arrow-up-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
